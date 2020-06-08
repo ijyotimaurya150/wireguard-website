@@ -8,9 +8,9 @@ Setup database using database_setup.sh script from
 <b>
   Changes to make in the script:
         <ul>
-         <l>Copy the contents of vpnserver_wireguard in the server to the same folder here.
+         <li>Copy the contents of vpnserver_wireguard in the server to the same folder here.</li>
           
-         <l>Edit the ssh details in Approve/approve.sh of the VPNServer in Approve/approve.sh script. (if using different server for website. Else comment out the line).
+         <li>Edit the ssh details in Approve/approve.sh of the VPNServer in Approve/approve.sh script. (if using different server for website. Else comment out the line).</li>
          
-         <l>Place theApprove_server.sh in the home directory of the VPNServer
+         <li>Place theApprove_server.sh in the home directory of the VPNServer.</li>
           </ul>
