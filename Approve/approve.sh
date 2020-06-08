@@ -12,7 +12,7 @@ if [[ $inp == "y" ]];
         then
                 echo "APPROVING..."
                 key=$(mysql -uroot -p -D vpn -Ns -e"SELECT client_key FROM clients WHERE Approved=0 AND client_id=$client")
-                ssh <user_name>@<VPN_SERVER_IP> /home/<user_name>/approve.sh $key $client
+                ssh <user_name>@<VPN_SERVER_IP> /home/<user_name>/approve_server.sh $key $client
                 echo "Approved $key"
                 mysql -uroot -p -e "UPDATE vpn.clients SET Approved=1 WHERE client_id=$client"
         elif [[ $inp == "n" ]];
